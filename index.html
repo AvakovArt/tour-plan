@@ -136,7 +136,7 @@
           <div class="hotel-grid">
             <div class="slider hotel__slider">
                 <!-- Slider main container -->
-                <div class="swiper-container">
+                <div class="swiper-container hotel-slider hotel__slider">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -154,8 +154,8 @@
                         </div>
                     </div>
                     <!-- If we need navigation buttons -->
-                    <button class="slider-button slider-button--prev"></button>
-                    <button class="slider-button slider-button--next"></button>
+                    <button class="hotel-slider__button hotel-slider__button--prev"></button>
+                    <button class="hotel-slider__button hotel-slider__button--next"></button>
                 </div>
                 <!-- /.swiper-container -->
             </div>
@@ -214,7 +214,122 @@
       <!-- /.container -->
   </section>
   <!-- /.hotel -->
+  <section class="newsletter">
+    <div class="newsletter-wrapper parallax-window" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
+      <h2 class="newsletter-title newsletter__title">
+        subscribe to our
+        <span class="newsletter-title__strong">
+          Newsletter
+        </span>
+      </h2>
+      <form action="#" class="subscribe newsletter__subscribe">
+        <input type="text" class="subscribe__input" placeholder="Your email address" />
+        <button class="subscribe__button">
+          Send
+        </button>
+      </form>
+    </div>
+    <!-- /.newsletter-wrapper -->
+  </section>
+  <!-- /.newsletter -->
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title">
+
+      </h2>
+      <div class="swiper-container reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">
+                  Megan Fox
+                </h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                </div>
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae itaque laborum repellat accusantium, quam
+                quo quas quis amet fugit nam ratione vero voluptatem inventore mollitia asperiores possimus consequatur
+                praesentium quibusdam odio molestias cum. Explicabo sint illo est voluptate debitis odit necessitatibus
+                recusandae laudantium odio placeat consectetur, iste voluptatum ut corrupti.
+              </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar.jpg" alt="Photo: Robert Johns" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">
+                  Robert Johns
+                </h3>
+                <span class="reviews-slider__date">Stayed 20 Dec, 2018</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                </div>
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae itaque laborum repellat accusantium, quam
+                quo quas quis amet fugit nam ratione vero voluptatem inventore mollitia asperiores possimus consequatur
+                praesentium quibusdam odio molestias cum. Explicabo sint illo est voluptate debitis odit necessitatibus
+                recusandae laudantium odio placeat consectetur, iste voluptatum ut corrupti.
+              </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">
+                  Megan Fox
+                </h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                </div>
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae itaque laborum repellat accusantium, quam
+                quo quas quis amet fugit nam ratione vero voluptatem inventore mollitia asperiores possimus consequatur
+                praesentium quibusdam odio molestias cum. Explicabo sint illo est voluptate debitis odit necessitatibus
+                recusandae laudantium odio placeat consectetur, iste voluptatum ut corrupti.
+              </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- .swiper-slide -->
+        </div>
+        <!-- .swiper-wrapper -->
+        <button class="reviews-slider__button reviews-slider__button--prev"></button>
+        <button class="reviews-slider__button reviews-slider__button--next"></button>
+      </div>
+      <!-- .reviews-slider -->
+    </div>
+  </section>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  
   </body>
 </html>
