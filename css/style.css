@@ -892,7 +892,7 @@ template {
 }
 
 .parallax-window {
-  background: transparent;
+  height: 100%;
 }
 
 .reviews {
