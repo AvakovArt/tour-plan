@@ -1096,6 +1096,10 @@ template {
   .map {
     width: 340px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
   .reviews-slider__item {
     max-width: 580px;
   }
@@ -1151,6 +1155,9 @@ template {
   .map {
     width: 100%;
   }
+  .newsletter {
+    padding: 92px 0 93px 0;
+  }
   .newsletter-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1159,6 +1166,10 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
