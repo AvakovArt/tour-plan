@@ -2,7 +2,7 @@
     .container
         max-width: 960px
     .hotel
-        &__slider
+        &-slider
             width: 590px
 @media (max-width: 992px)
     .container,
@@ -66,7 +66,6 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
-
     .hotel
         &-right
             flex-direction: column
@@ -88,20 +87,18 @@
                 &:after, &:before
                     display: none
             &__button
-                top: 32px
+                top: 45px
                 &--prev
                     left: 50%
                     transform: translateY(-50%, 0)
-                    margin-left: -65px
+                    margin-left: -75px
                 &--next
                     right: 50%
                     transform: translateY(50%, 0)
-                    margin-left: -65px
+                    margin-right: -75px
 @media (max-width: 576px)
     .logo
         width: 99px
-    .slider
-        height: 250px
     .hotel
         &__slider
             margin-bottom: 20px
