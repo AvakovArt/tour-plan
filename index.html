@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -26,7 +26,7 @@
               class="logo__image"
             />
           </a>
-          <form action="#" class="search navbar__search">
+          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
             <input
               type="text"
               class="search__input"
@@ -36,7 +36,7 @@
               <img src="img/search.svg" alt="Icon: search" />
             </div>
           </form>
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="img/avatar.jpg"
               alt="Avatar: Nathan"
@@ -57,6 +57,28 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item--mobile--visible">
+              <a href="#" class="user navbar__user navbar__user--mobile--visible">
+                <img
+                  src="img/avatar.jpg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item--mobile--visible">
+              <form action="#" class="search navbar__search navbar__search--mobile--visible">
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <div class="search__button">
+                  <img src="img/search.svg" alt="Icon: search" />
+                </div>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All deals</a>
             </li>
