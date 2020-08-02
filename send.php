@@ -35,7 +35,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'AA.UC.tshk.18@gmail.com'; // Логин на почте
-    $mail->Password   = ''; // Пароль на почте
+    $mail->Password   = 'UnderCreated'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('AA.UC.tshk.18@gmail.com', 'Михаил Аваков'); // Адрес самой почты и имя отправителя
@@ -45,10 +45,15 @@ try {
 
     // Отправка сообщения
     $mail->isHTML(true);
-    $mail->Subject = $title;
-    $mail->Subject = $titleEmail;
-    $mail->Body = $body;
-    $mail->Body = $bodyEmail;
+    if (!empty($pochta)) {
+      $mail->Subject = $titleEmail;
+      $mail->Body = $bodyEmail;
+    } else {
+      $mail->Subject = $title;  
+      $mail->Body = $body;
+    }
+    
+    
     
 
 
