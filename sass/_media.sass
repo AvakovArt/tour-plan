@@ -97,7 +97,13 @@
                     margin-right: 5px
                 // &-icons
                 //     grid-row: 10
-                //     grid-column: 1 / 2    
+                //     grid-column: 1 / 2
+    .modal
+        &__dialog
+            width: 90%
+            padding: 20px 70px
+        &__message
+            height: 150px    
 @media (max-width: 768px)
     .container,
     .newsletter-wrapper
@@ -208,6 +214,14 @@
     .footer
         &__input
             flex-basis: 100%
+    .modal
+        &__dialog
+            width: 80%
+            padding: 15px 50px
+        &__input
+            width: 100%
+        &__message
+            height: 100px
 @media (max-width: 576px)
     .logo
         width: 99px
@@ -273,6 +287,14 @@
             grid-column: 1  
             &-text
                 margin-left: 0
+    .modal
+        &__dialog
+            width: 95%
+        &__message
+            min-height: 100px
+        &__button
+            width: 100%
+            margin-bottom: 5px
 @media (max-width: 320px)
     .footer
         &-wrapper
