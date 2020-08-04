@@ -1417,7 +1417,7 @@ template {
 
 .modal__message {
   width: 100%;
-  min-height: 123px;
+  height: 123px;
   margin-bottom: 15px;
 }
 
