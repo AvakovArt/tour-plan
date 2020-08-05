@@ -28,12 +28,8 @@ $(document).ready(function () {
 
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
-  // var closeModalButtonKey = $("[data-keyboard=true]");
-
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
-  // closeModalButtonKey.on("keydown", closeModal);
-
   function openModal() {
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
@@ -59,17 +55,18 @@ $(".form").each(function () {
     errorClass: "invalid",
     messages: {
       name: {
-        required: "Укажите имя",
-        minlength: "Имя должно быть не короче 2 букв",
+        required: "Please enter a name",
+        minlength: "Name must be at least 2 letter long",
       },
       email: {
-        required: "We need your email address to contact you",
+        required: "Please enter your email",
         email: "Your email address must be in the format of name@domain.com",
       },
       phone: {
-        required: "Телефон обязателен",
+        required: "Please enter a phone",
       },
     },
   });
 });
+$(".phone_with_ddd").mask("+7(999) 000-00-00");
 AOS.init();
