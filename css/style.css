@@ -518,6 +518,7 @@ template {
   width: 65px;
   height: 100%;
   background-color: #ec1f46;
+  cursor: pointer;
 }
 
 .user {
