@@ -1295,8 +1295,18 @@ template {
   color: #bdbdbd;
 }
 
+.footer__item a {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
 .footer__item--mb-2 {
   margin-bottom: 20px;
+}
+
+.footer__item--tels a {
+  color: #bdbdbd;
+  text-decoration: none;
 }
 
 .footer__icon-wrapper {
