@@ -72,3 +72,4 @@ $(".form").each(function () {
     },
   });
 });
+AOS.init();
