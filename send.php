@@ -8,7 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-$pochta = $_POST['pochta'];
+$email = $_POST['email'];
 
 // Формирование самого письма
 $title = "Заголовок письма";
@@ -21,7 +21,7 @@ $body = "
 $titleEmail = "Заголовок письма";
 $bodyEmail = "
 <h2>Письмо пользователя</h2>
-<b>Почта:</b> $pochta<br><br>
+<b>Почта:</b> $email<br><br>
 ";
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -45,7 +45,7 @@ try {
 
     // Отправка сообщения
     $mail->isHTML(true);
-    if (!empty($pochta)) {
+    if (!empty($email)) {
       $mail->Subject = $titleEmail;
       $mail->Body = $bodyEmail;
     } else {
@@ -65,7 +65,7 @@ else {$result = "error";}
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
-if ($pochta) {
+if ($email) {
   header('Location: newsletter.html');
 } else {
   header('Location: thankyou.html');

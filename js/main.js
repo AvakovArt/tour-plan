@@ -60,10 +60,11 @@ $(".form").each(function () {
       },
       email: {
         required: "Please enter your email",
-        email: "Your email address must be in the format of name@domain.com",
+        email: "Your email address format of name@domain.com",
       },
       phone: {
         required: "Please enter a phone",
+        minlength: "Phone cannot be shorter than 4 characters",
       },
     },
   });

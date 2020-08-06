@@ -37,10 +37,8 @@
     position: relative
     width: 350px
     height: 55px
-    border-radius: 4px
-    overflow: hidden
     &__input
-        position: absolute
+        position: relative
         width: 100%
         height: 100%
         border: none
@@ -50,6 +48,16 @@
         font-weight: 300
         font-size: 14px
         line-height: 18px
+        border-radius: 4px
+        overflow: hidden
+        outline: none
+        &-group
+            width: 100%
+            height: 55px
+        &-label
+            position: absolute
+            left: 0
+            bottom: -15px
     &__button
         position: absolute
         min-width: 65px
@@ -60,6 +68,7 @@
         background-color: $primory
         color: $light
         cursor: pointer
+        border-radius: 0 4px 4px 0
 .parallax-window
     height: 100%
     background: transparent

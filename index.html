@@ -14,10 +14,6 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=c5d38d13-4703-4a15-99d2-12e69aacbef8&lang=ru_RU"
-      type="text/javascript"
-    ></script>
   </head>
 
   <body>
@@ -242,7 +238,9 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div class="map" id="map"></div>
+            <div class="map" id="map">
+              <img src="img/card-two.jpg" alt="Google map" />
+            </div>
             <!-- /.map -->
           </div>
         </div>
@@ -260,15 +258,21 @@
         </h2>
         <form
           action="send.php"
-          class="subscribe newsletter__subscribe"
+          class="form subscribe newsletter__subscribe"
           method="POST"
         >
-          <input
-            type="email"
-            class="subscribe__input"
-            placeholder="Your email address"
-            name="pochta"
-          />
+          <div class="subscribe__input-group">
+            <input
+              type="text"
+              class="subscribe__input"
+              placeholder="Your email address"
+              name="email"
+              required
+            />
+            <div class="subscribe__input-label">
+              <label for="email" class="invalid"></label>
+            </div>
+          </div>
           <button class="subscribe__button" type="submit">
             Send
           </button>
@@ -666,6 +670,8 @@
                   placeholder="Phone Number*"
                   name="phone"
                   required
+                  maxlength="14"
+                  minlength="4"
                 />
                 <div class="footer__input-label">
                   <label for="phone" class="invalid"></label>
@@ -694,7 +700,9 @@
               >
             </div>
             <div class="footer__disclaimer-icons">
-              <a href="#"><img src="img/footer-icon.png" alt="Icon: footer icon" /></a>
+              <a href="#"
+                ><img src="img/footer-icon.png" alt="Icon: footer icon"
+              /></a>
             </div>
           </div>
           <!-- /.footer__disclaimer -->
@@ -730,6 +738,8 @@
               placeholder="Phone Number*"
               name="phone"
               required
+              minlength="4"
+              maxlength="14"
             />
             <div class="modal__input-label">
               <label for="phone" class="invalid"></label>
@@ -787,6 +797,8 @@
               placeholder="Phone Number*"
               name="phone"
               required
+              minlength="4"
+              maxlength="14"
             />
             <div class="modal__input-label">
               <label for="phone" class="invalid"></label>
@@ -846,6 +858,8 @@
               placeholder="Phone Number*"
               name="phone"
               required
+              minlength="4"
+              maxlength="14"
             />
             <div class="modal__input-label">
               <label for="phone" class="invalid"></label>
@@ -905,6 +919,8 @@
               placeholder="Phone Number*"
               name="phone"
               required
+              minlength="4"
+              maxlength="14"
             />
             <div class="modal__input-label">
               <label for="phone" class="invalid"></label>
@@ -964,6 +980,8 @@
               placeholder="Phone Number*"
               name="phone"
               required
+              minlength="4"
+              maxlength="14"
             />
             <div class="modal__input-label">
               <label for="phone" class="invalid"></label>
@@ -1023,6 +1041,7 @@
               placeholder="Phone Number*"
               name="phone"
               required
+              minlength="4"
               maxlength="14"
             />
             <div class="modal__input-label">
@@ -1061,17 +1080,8 @@
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/map.js"></script>
     <script src="js/parallax.min.js"></script>
-    <script type="text/javascript">
-      ymaps.ready(init);
-
-      function init() {
-        var myMap = new ymaps.Map("map", {
-          center: [7.890846, 98.294736],
-          zoom: 12,
-        });
-      }
-    </script>
     <script>
       $(".parallax-window").parallax({ imageSrc: "img/newsletter-bg.jpg" });
     </script>
