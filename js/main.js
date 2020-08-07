@@ -64,7 +64,8 @@ $(".form").each(function () {
       },
       phone: {
         required: "Please enter a phone",
-        minlength: "Phone cannot be shorter than 4 characters",
+        phone: "5",
+        minlength: "Phone cannot be shorter than 5 characters",
       },
     },
   });
